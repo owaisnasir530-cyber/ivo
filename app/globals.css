@@ -90,3 +90,28 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #024a8f;
 }
+
+/* Full height layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#__next {
+  height: 100%;
+}
+
+/* Responsive text sizing */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+}
