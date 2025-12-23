@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -31,4 +31,62 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+} */
+
+
+@import "tailwindcss";
+
+:root {
+  --background: #FFF9EB;  /* Your light cream background */
+  --foreground: #171717;
+  --accent: #013362;  /* Your dark blue button color */
+  color-scheme: light;
+}
+
+:root[data-color-scheme="dark"] {
+  --background: #FFF9EB;  /* Keep same background in dark mode */
+  --foreground: #171717;  /* Keep same text color */
+  --accent: #013362;  /* Keep same button color */
+  color-scheme: light;  /* Force light mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-color-scheme]) {
+    --background: #FFF9EB;
+    --foreground: #171717;
+    --accent: #013362;
+    color-scheme: light;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF9EB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #013362;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #024a8f;
 }
