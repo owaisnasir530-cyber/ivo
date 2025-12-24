@@ -6,11 +6,7 @@ export const WORKFLOW_ID =
 export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
-  {
-    label: "Chciałbym ustalić krąg spadkobierców w mojej sprawie. Jakich informacji potrzebujesz?",
-    prompt: "Chciałbym ustalić krąg spadkobierców w mojej sprawie. Jakich informacji potrzebujesz?",
-    icon: "circle-question",
-  },
+  
   {
     label: "Na czym polega wydziedziczenie?",
     prompt: "Na czym polega wydziedziczenie?",
@@ -35,7 +31,7 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
 
 export const PLACEHOLDER_INPUT = "Czekam na pytanie...";
 
-export const GREETING = "W czym mogę Ci pomóc?";
+export const GREETING = "Cześć, jestem IVO. Wirtualny Doradca AI do spraw spadkowych. W czym mogę Ci pomóc?";
 
 // export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
 //   color: {
@@ -82,7 +78,7 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
       shade: 0,
     },
     accent: {
-      primary: "#013362",  // Your dark blue
+      primary: "#A42058",  // Your Pink
       level: 1,
     },
   },
